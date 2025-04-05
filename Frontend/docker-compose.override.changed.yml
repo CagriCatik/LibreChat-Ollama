@@ -1,0 +1,22 @@
+services:
+  rag_api:
+    image: ghcr.io/danny-avila/librechat-rag-api-dev:latest
+
+  api:
+    volumes:
+      - type: bind
+        source: ./librechat.yaml
+        target: /app/librechat.yaml
+
+  ollama:
+    image: ollama/ollama:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [compute, utility]
+    ports:
+      - "11435:11434"
+    volumes:
+      - ./ollama:/root/.ollama

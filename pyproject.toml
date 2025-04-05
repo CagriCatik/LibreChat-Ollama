@@ -1,15 +1,16 @@
-[project]
+[tool.poetry]
 name = "librechat-ollama"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "CagriCatik",email = "mccatik@gmail.com"}
-]
+authors = ["CagriCatik <mccatik@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-]
 
+[tool.poetry.dependencies]
+python = ">=3.10"
+psutil = "^5.9.0"
+PySide6 = "^6.4.0"
+GPUtil = "^1.4.0"
+blessings = "^1.7"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
