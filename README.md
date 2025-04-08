@@ -9,21 +9,9 @@ This guide demonstrates how to install LibreChat locally and integrate it with O
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [LibreChat YAML Configuration](#librechat-yaml-configuration)
-  - [Docker Compose Override](#docker-compose-override)
 - [Running the Application](#running-the-application)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
-
----
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- [Conda](https://docs.conda.io/en/latest/)
-- [Docker and Docker Compose](https://docs.docker.com/compose/install/)
-- Git
 
 ---
 
@@ -75,8 +63,6 @@ Before you begin, ensure you have the following installed:
    ```
    http://localhost:3080/
    ```
-
-
 
 ## Running the Application
 
